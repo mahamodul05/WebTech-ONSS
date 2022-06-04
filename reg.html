@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration</title>
+</head>
+<body>
+
+
+	<form action="database.php" method="post" autocomplete="on" novalidate>
+
+		<fieldset>
+			<legend>General</legend>
+			<label for="fname">First Name </label>
+			<input id="fname" type="text" name="fname" placeholder="First name">
+			<br>
+			<br>
+			<label for="lname">Last Name </label>
+			<input id="lname" type="text" name="lname" placeholder="Last Name">
+
+			<br>
+			<br>
+
+			<label>Gender </label>
+			<input type="radio" name="Gender" value="male">Male
+			<input type="radio" name="Gender" value="female">Female
+			<br>
+		</fieldset>
+
+
+		<fieldset>
+			<legend>Contact</legend>
+			<label for="mail">Email </label>
+			<input id="mail" type="text" name="mail">
+			<br>
+			<br>
+			<label for="mobno">Mobile No </label>
+			<input id="mobno" type="number" name="mobno">
+		</fieldset>
+		
+
+		<fieldset>
+			<legend>Address</legend>
+			<label for="address">Street/House/Road </label>
+			<input id="address" type="text" name="address">
+			<br>
+			<br>
+			<label>Country </label>
+			<select name="country">
+			<option>Bangladesh</option>
+			<option>India</option>
+			<option>Nepal</option>
+			<option>Bhutan</option>
+			<option>Pakistan</option>
+			<option>Japan</option>
+			</select>
+		</fieldset>
+
+	<br>
+	<input type="submit" name="Submit" value="Register">
+
+
+
+
+
+
+	
+
+
+
+
+
+
+</form>
+
+
+
+
+
+
+
+</body>
+</html>
