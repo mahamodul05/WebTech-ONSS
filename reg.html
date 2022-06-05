@@ -8,23 +8,23 @@
 <body>
 
 
-	<form action="database.php" method="post" autocomplete="on" novalidate>
+	<form action="database.php" method="post" autocomplete="on">
 
 		<fieldset>
 			<legend>General</legend>
 			<label for="fname">First Name </label>
-			<input id="fname" type="text" name="fname" placeholder="First name">
+			<input id="fname" type="text" name="fname" placeholder="First name" required>
+			<span class = "text-danger"><?php echo $fname_error; ?></span>
 			<br>
 			<br>
 			<label for="lname">Last Name </label>
-			<input id="lname" type="text" name="lname" placeholder="Last Name">
-
+			<input id="lname" type="text" name="lname" placeholder="Last Name" required>
 			<br>
 			<br>
 
 			<label>Gender </label>
-			<input type="radio" name="Gender" value="male">Male
-			<input type="radio" name="Gender" value="female">Female
+			<input type="radio" name="Gender" value="male" required>Male
+			<input type="radio" name="Gender" value="female" required>Female
 			<br>
 		</fieldset>
 
@@ -32,22 +32,22 @@
 		<fieldset>
 			<legend>Contact</legend>
 			<label for="mail">Email </label>
-			<input id="mail" type="text" name="mail">
+			<input id="mail" type="text" name="mail" required>
 			<br>
 			<br>
 			<label for="mobno">Mobile No </label>
-			<input id="mobno" type="number" name="mobno">
+			<input id="mobno" type="number" name="mobno" required>
 		</fieldset>
 		
 
 		<fieldset>
 			<legend>Address</legend>
 			<label for="address">Street/House/Road </label>
-			<input id="address" type="text" name="address">
+			<input id="address" type="text" name="address" required>
 			<br>
 			<br>
 			<label>Country </label>
-			<select name="country">
+			<select name="country" required>
 			<option>Bangladesh</option>
 			<option>India</option>
 			<option>Nepal</option>
